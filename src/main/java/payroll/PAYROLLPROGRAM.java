@@ -34,7 +34,7 @@ public class PAYROLLPROGRAM {
 	}
 	
 	//Set employee rate
-	public void SETRATE(int employeeindex, int employeerate) {
+	public void SETRATE(int employeeindex, float employeerate) {
 		R[employeeindex] = employeerate;
 	}
 	
