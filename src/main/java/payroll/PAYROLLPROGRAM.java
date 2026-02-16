@@ -33,6 +33,11 @@ public class PAYROLLPROGRAM {
 		hours[employeeindex] = thehours;
 	}
 	
+	//Set employee rate
+	public void SETRATE(int employeeindex, int employeerate) {
+		rate[employeeindex] = employeerate;
+	}
+	
 	
 	public int[] PAYEMPLOYEES() {
 		// Evil behemoth if statement goes here determining what to set the payroll values to.
