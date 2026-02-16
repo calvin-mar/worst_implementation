@@ -5,9 +5,9 @@ public class PAYROLLPROGRAM {
 	int[] T;						// Array of ints signifying employee type. 1 = Contractor, 2 = Hourly, 3 = Salary
 	String[] N;				// Parallel array for names
 	int[] H;						// Parallel array for hours worked
-	int[] M;						// Parallel array for amount of money they are paid
+	float[] M;						// Parallel array for amount of money they are paid
 	int P;							// Universal counter that tracks the arrays
-	int[] R;						// Parallel array for RATE they are paid
+	float[] R;						// Parallel array for RATE they are paid
 
 
 	// Constructor
@@ -15,7 +15,7 @@ public class PAYROLLPROGRAM {
 		this.T = new int[100];			// We are assuming (for some reason) that employees will not exceed 100
 		this.N = new String[100];	
 		this.H = new int[100];				
-		this.R = new int[100];				
+		this.R = new float[100];				
 		this.P = 0;							
 	}
 	
@@ -39,7 +39,7 @@ public class PAYROLLPROGRAM {
 	}
 	
 	
-	public int[] PAYEMPLOYEES() {
+	public float[] PAYEMPLOYEES() {
 		// Evil behemoth if statement goes here determining what to set the payroll values to.
 		for(int i=0; i<N.length;i++) {
 			if(T[i] == 1) {
@@ -61,6 +61,38 @@ public class PAYROLLPROGRAM {
 		}
 		// Returns the payroll
 		return M;
+	}
+
+	public int[] getT() {
+		return T;
+	}
+
+	public void setT(int[] t) {
+		T = t;
+	}
+
+	public String[] getN() {
+		return N;
+	}
+
+	public void setN(String[] n) {
+		N = n;
+	}
+
+	public int[] getH() {
+		return H;
+	}
+
+	public void setH(int[] h) {
+		H = h;
+	}
+
+	public float[] getR() {
+		return R;
+	}
+
+	public void setR(float[] r) {
+		R = r;
 	}
 	
 
