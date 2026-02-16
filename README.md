@@ -9,11 +9,14 @@ This implementation is a joke and for class competition purposes only.
 
 * No defensive program: At risk of bad inputs.
 
-* One file for the entire program: Not only does this make it hard to contribute as a team, but it is also not efficient. It is difficult to navigate and introduces areas for bugs anywhere that data is referenced and modified. 
+* One file for the entire program: Not only does this make it hard to contribute as a team, but it is also not efficient. It is difficult to navigate and introduces areas for bugs anywhere that data is referenced and modified.
+
+* Poor code proximity: Getters/setters out of order and poorly localized makes it confusing to read.
 
 * Bad variable names: This makes it difficult to read the implementation, but also makes it difficult to track what data is stored and introduces space for errors.
   
 * Use of parallel arrays as global variables to track data: This is not efficient and introduces poor scalability, may introduce issues that are not easy to track, and cannot be easily reused if the data changes.
   
 * No whitespace (PAYROLLOPTIMAL): Makes it extremely difficult to read and understand.
+
 
