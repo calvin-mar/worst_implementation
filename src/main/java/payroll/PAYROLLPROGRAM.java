@@ -5,16 +5,12 @@ public class PAYROLLPROGRAM {	int[] T;
 	float[] R;
 	public PAYROLLPROGRAM() { this.T = new int[100];		
 		this.N =new String[100];	
-		this.H = new int[100];				
-		this.R = new float[100];	
-		this.M = new float[100];
-		this.P = 0;							
+			this.H = new int[100];				
+				this.R = new float[100];this.M = new float[100];this.P = 0;							
 	}
 	public void ADDEMPLOYEE(String n,int t) { N[P]= n; T[P] =t; H[P] =0;R[P] = 0;
-		P++;}
-	public void SETHOURS(int e,int h) {		H[e] = h;}
+		P++;}public void SETHOURS(int e,int h) {		H[e] = h;}
 	public void SETRATE(int e,float r) {					R[e]=r;			}
-	
 	public float[] PAYEMPLOYEES() {	for(int i=0;  i<N.length;i++) {
 if(T[i]==1) {
 		M[i]=H[i]*R[i];}else if (T[i]==2) {
@@ -22,8 +18,23 @@ if(T[i]==1) {
 						int f=H[i]-40;
 					M[i]=(int) ((40*R[i]) + (f*(1.5*R[i])));		
 				}
-			else {
-				M[i] = (float) (40*R[i]);
+else {
+				M
+[
+				 i
+				 ]
+						 =
+						 (
+								 float
+								 )
+						 (
+								 40
+								 *
+								 R
+								 								[
+								  i
+]
+										 )					;
 			}
 		}else if(T[i]==3) {
 						M[i]=40*R[i];
@@ -40,6 +51,8 @@ if(T[i]==1) {
 	public void setN(String[] n) {		N =n;	}
 	public int[] getH() {
 		return H;}
+	
+	
 	
 	
 	
