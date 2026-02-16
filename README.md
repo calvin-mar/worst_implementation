@@ -7,6 +7,8 @@ This implementation is a joke and for class competition purposes only.
   
 * Bad code structure: Makes it hard to understand the code and makes room for potential bugs to be overlooked.
 
+* Poor if-statements: The inefficient use of if-statements, where the conditions are also poor, makes it hard to understand the logic behind them. 
+
 * No defensive program: At risk of bad inputs.
 
 * One file for the entire program: Not only does this make it hard to contribute as a team, but it is also not efficient. It is difficult to navigate and introduces areas for bugs anywhere that data is referenced and modified.
