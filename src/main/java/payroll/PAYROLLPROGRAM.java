@@ -15,7 +15,8 @@ public class PAYROLLPROGRAM {
 		this.T = new int[100];			// We are assuming (for some reason) that employees will not exceed 100
 		this.N = new String[100];	
 		this.H = new int[100];				
-		this.R = new float[100];				
+		this.R = new float[100];	
+		this.M = new float[100];
 		this.P = 0;							
 	}
 	
@@ -48,7 +49,10 @@ public class PAYROLLPROGRAM {
 				
 				if(H[i] > 40) {
 					int f = H[i] - 40;
-					M[i]=(int) ((40*R[i]) + (f*(1.5*R[i])));		
+					M[i]=(float)((40*R[i]) + (f*(1.5*R[i])));		
+				}
+				else {
+					M[i] = (40*R[i]);
 				}
 
 			}else if(T[i]==3) {
