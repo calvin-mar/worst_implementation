@@ -20,22 +20,22 @@ public class PAYROLLPROGRAM {
 	}
 	
 	// Add employee (modify four arrays...)
-	public void ADDEMPLOYEE(String name, int thetype) {
-		N[P] = name;
-		T[P] = thetype;
+	public void ADDEMPLOYEE(String n, int t) {
+		N[P] = n;
+		T[P] = t;
 		H[P] = 0;
 		R[P] = 0;
 		P++;
 	}
 	
 	// Set employee hours
-	public void SETHOURS(int employeeindex, int thehours) {		// I guess the user is expected to know the index?
-		H[employeeindex] = thehours;
+	public void SETHOURS(int e, int h) {		// I guess the user is expected to know the index?
+		H[e] = h;
 	}
 	
 	//Set employee rate
-	public void SETRATE(int employeeindex, float employeerate) {
-		R[employeeindex] = employeerate;
+	public void SETRATE(int e, float r) {
+		R[e] = r;
 	}
 	
 	
@@ -47,8 +47,8 @@ public class PAYROLLPROGRAM {
 			}else if (T[i]==2) {
 				
 				if(H[i] > 40) {
-					int hrsovertime = H[i] - 40;
-					M[i]=(int) ((40*R[i]) + (hrsovertime*(1.5*R[i])));		
+					int f = H[i] - 40;
+					M[i]=(int) ((40*R[i]) + (f*(1.5*R[i])));		
 				}
 
 			}else if(T[i]==3) {
